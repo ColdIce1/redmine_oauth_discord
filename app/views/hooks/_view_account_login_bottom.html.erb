@@ -1,0 +1,11 @@
+<%= stylesheet_link_tag 'buttons', :plugin => 'redmine_oauth_discord' %>
+
+<% if Setting.plugin_redmine_oauth_discord[:oauth_authentification] %>
+  <hr>
+  <div class="social-login-box">
+    <%= link_to oauth_discord_path(:back_url => back_url), :class => 'social-button', :id => "discord-connect" do %>
+      <%= content_tag :span,'', :class => "discord-connect-btn-icon" %>&emsp;
+      <%= content_tag :span, l(:login_via_discord), :class => "discord-connect-btn-text"  %>
+    <% end %>
+  </div>
+<% end %>

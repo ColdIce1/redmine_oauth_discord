@@ -1,0 +1,48 @@
+.social-login-box {
+    background: #fff;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.social-button {
+    line-height: 0.2em;
+    cursor: pointer;
+    padding: 8px 14px 8px 10px;
+    font-size: 14px;
+    border: 1px solid #7289DA;
+    border-radius: 3px;
+    box-sizing: border-box;
+
+}
+
+#discord-connect {
+  background: #7289DA;
+}
+
+#discord-connect:hover {
+  background: #2C2F33;
+  text-decoration: unset;
+}
+
+.discord-connect-btn-icon {
+    background-image: url('../images/discord_login_icon.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+.discord-connect-btn-text {
+	  box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    outline: rgb(255, 255, 255) none 0px;    
+}
