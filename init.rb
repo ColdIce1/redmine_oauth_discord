@@ -6,7 +6,7 @@ Redmine::Plugin.register :redmine_oauth_discord do
   name 'Redmine OAuth Discord plugin'
   author 'coldice'
   description 'Redmine Authentication using Discord as OAuth2 provider'
-  version '0.0.1'
+  version '0.1.0'
   url ''
   author_url ''
 
