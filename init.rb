@@ -17,7 +17,3 @@ Redmine::Plugin.register :redmine_oauth_discord do
            },
            partial: 'settings/discord_settings'
 end
-
-RedmineApp::Application.config.after_initialize do
-  MyController.prepend(RedmineOauthDiscord::MyControllerPatch)
-end
