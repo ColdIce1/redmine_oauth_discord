@@ -1,6 +1,5 @@
 require 'redmine'
 require_dependency 'redmine_oauth_discord/hooks'
-require_dependency 'redmine_oauth_discord/my_controller_patch'
 
 Redmine::Plugin.register :redmine_oauth_discord do
   name 'Redmine OAuth Discord plugin'
