@@ -15,6 +15,7 @@ Redmine::Plugin.register :redmine_oauth_discord do
              client_id: "",
              client_secret: "",
              oauth_authentification: false,
+             default_group_id: nil,
            },
            partial: "settings/discord_settings"
 end

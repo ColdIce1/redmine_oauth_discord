@@ -1,12 +1,16 @@
 <p>
   <label>Client ID:</label>
-  <%= text_field_tag 'settings[client_id]', @settings[:client_id] %>
+  <%= text_field_tag "settings[client_id]", @settings[:client_id] %>
 </p>
 <p>
   <label>Client Secret:</label>
-  <%= text_field_tag 'settings[client_secret]', @settings[:client_secret] %>
+  <%= text_field_tag "settings[client_secret]", @settings[:client_secret] %>
 </p>
 <p>
-  <label>Oauth authentification:</label>
+  <label>Oauth authentification enabled?:</label>
   <%= check_box_tag "settings[oauth_authentification]", true, @settings[:oauth_authentification] %>
+</p>
+<p>
+    <label>Default group ID for new users:</label>
+    <%= select_tag("settings[default_group_id]", options_from_collection_for_select(Group.all, :id, :name, @settings[:default_group_id])) %>
 </p>

@@ -135,6 +135,11 @@ class RedmineOauthDiscordController < AccountController
       @user.discord_avatar_url = session[:auth_source_registration][:discord_avatar_url]
 
       if @user.save
+        # add user to default group set by admin
+        @group = Group.find(settings["default_group_id"].to_i)
+        @group.users << @user
+        @user.reload
+
         session[:oauth_last_seen] = nil
         session[:auth_source_registration] = nil
         self.logged_user = @user
