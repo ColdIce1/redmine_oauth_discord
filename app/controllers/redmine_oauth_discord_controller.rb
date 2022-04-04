@@ -86,6 +86,7 @@ class RedmineOauthDiscordController < AccountController
 
         @user.discord_avatar_url = "https://cdn.discordapp.com/avatars/#{userinfo["id"]}/#{userinfo["avatar"]}.png"
         if @user.save
+          @user.update_last_login_on!
           params[:autologin] = true
           successful_authentication(@user)
         else
