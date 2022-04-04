@@ -1,5 +1,8 @@
 # English strings go here for Rails i18n
 en:
-  notice_unable_to_obtain_discord_credentials: "Unable to obtain credentials from Discord."
-  notice_access_denied: "You must allow to use you Discord credentials to enter this site."
-  login_via_discord: "Login via Discord"
+  notice_unable_to_obtain_discord_credentials: Unable to obtain credentials from Discord.
+  notice_unable_to_login_via_discord: Error. Can't sign-in via Discord.
+  notice_discord_access_denied: You must allow to use you Discord credentials to enter this site.
+  notice_discord_account_created: Your account has been created.
+  login_via_discord: Login via Discord
+  user_discord_username_history_tab: Username History

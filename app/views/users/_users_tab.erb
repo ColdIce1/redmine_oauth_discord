@@ -1,0 +1,21 @@
+<% if @user.discord_username_history.any? %>
+<div class="autoscroll">
+<table class="list users">
+  <thead><tr>
+  <th><%= l(:field_login) %></th>
+  <th>Discriminator</th>
+  <th><%= l(:field_created_on) %></th>
+  <th></th>
+  </tr></thead>
+  <tbody>
+<% for record in @user.discord_username_history -%>
+    <tr class="<%= @user.css_classes %>">
+        <td class="username"><%= record.username %></td>
+        <td class="username"><%= record.discriminator %></td>
+        <td class="created_on"><%= format_time(record.created_on) %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+</div>
+<% end %>
