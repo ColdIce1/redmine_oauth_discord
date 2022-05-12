@@ -10,7 +10,7 @@ Download the plugin, install required gems and migrate to update the database:
 
 ```console
 cd /path/to/redmine/plugins
-git clone https://github.com/ColdIce1/redmine_oauth_discord
+git clone github_repo_url
 cd /path/to/redmine
 bundle install
 bundle exec rake redmine:plugins:migrate RAILS_ENV=production
@@ -56,7 +56,7 @@ Additionaly
 3. The plugin redirects them to a Discord sign-in page if they are not already signed in to their Discord account.
 4. Discord redirects user back to Redmine, where the Discord OAuth plugin's controller takes over.
 
-Please note that this plugin does not care about "self-registration" status. It will always allow login UNLESS **Oauth authentication enabled** is unticked in the plugin settings page. If you want to revert this behaviour, see [redmine_oauth_controller.rb](app/controllers/redmine_oauth_controller.rb) line 61.
+Please note that this plugin does not care about "self-registration" status. It will always allow login UNLESS **Oauth authentication enabled** is unticked in the plugin settings page. If you want to revert this behaviour, see [redmine_oauth_discord_controller.rb](app/controllers/redmine_oauth_discord_controller.rb) line 61.
 
 ### Further info
 
